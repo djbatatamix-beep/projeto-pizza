@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornace - Pizza Artesanal Premium</title>
+    <meta name="description"
+        content="Experimente o verdadeiro sabor de Nápoles com nossa pizza artesanal premium feita em forno a lenha.">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cinematic Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Ambient Glow Effects -->
+    <div class="glow-bg glow-primary"></div>
+    <div class="glow-bg glow-secondary"></div>
+    <div class="glow-bg glow-accent"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="./logo.png" alt="KiSabor Logo" class="logo-image">
+            </div>
+            <nav class="nav-links">
+                <a href="#menu" class="nav-link">Nosso Cardápio</a>
+                <a href="#story" class="nav-link">O Preparo</a>
+                <a href="#locations" class="nav-link">Unidades</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#book" class="btn btn-text">Reservar Mesa</a>
+                <a href="#order" class="btn btn-primary">Pedir Delivery</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <canvas id="hero-canvas" class="hero-bg-canvas"></canvas>
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+
+            <!-- Left Column: Content -->
+            <div class="hero-content">
+
+
+                <h1 class="hero-title">
+                    Dominando a <br>
+                    <span class="text-gradient">Arte da Pizza.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Feita à mão com ingredientes Selecionados, fermentação de 72 horas e assada com perfeição absoluta
+                    em nosso tradicional forno de pedra.
+                </p>
+
+                <div class="hero-highlights">
+                    <div class="highlight">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                            </svg>
+                        </div>
+                        <div class="highlight-text">
+                            <strong>Ingredientes Frescos</strong>
+                            <span>Importados diariamente</span>
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+                            </svg>
+                        </div>
+                        <div class="highlight-text">
+                            <strong>Forno a Lenha</strong>
+                            <span>Assada a 450°C</span>
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 22h14" />
+                                <path d="M5 2h14" />
+                                <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
+                                <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
+                            </svg>
+                        </div>
+                        <div class="highlight-text">
+                            <strong>Fermentação de 72h</strong>
+                            <span>Massa leve e aerada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#explore" class="btn btn-primary btn-lg">Ver Cardápio</a>
+                    <a href="#video" class="btn btn-secondary btn-lg">
+                        <span class="play-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="currentColor" stroke="none">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                        </span>
+                        Ver o Preparo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Animation Space -->
+            <div class="hero-visual">
+                <!-- This area is reserved for the future 3D pizza animation -->
+                <div class="animation-stage">
+                    <!-- Helper elements to visualize the space and add cinematic flair -->
+                    <div class="stage-ring ring-1"></div>
+                    <div class="stage-ring ring-2"></div>
+                    <div class="stage-ring ring-3"></div>
+                    <div class="stage-pedestal"></div>
+
+                    <div class="stage-label" style="display: none;">
+                        <span class="label-icon">✦</span>
+                        <span>Reservado para Animação 3D</span>
+                        <span class="label-icon">✦</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        const canvas = document.getElementById('hero-canvas');
+        const ctx = canvas.getContext('2d');
+        const totalFrames = 40;
+        const images = [];
+        let loadedImages = 0;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            // The requestAnimationFrame loop will handle the redrawing
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        for (let i = 1; i <= totalFrames; i++) {
+            const img = new Image();
+            const frameNumber = i.toString().padStart(3, '0');
+            img.src = `ezgif-frame-${frameNumber}.jpg`;
+            img.onload = () => {
+                loadedImages++;
+                if (loadedImages === totalFrames) {
+                    startAnimation();
+                }
+            };
+            images.push(img);
+        }
+
+        let currentFrame = 0;
+        let lastTime = 0;
+        const fps = 5; // Cinematic motion
+        const frameInterval = 1000 / fps;
+
+        function getDrawRect(img) {
+            const canvasRatio = canvas.width / canvas.height;
+            const imgRatio = img.width / img.height;
+            let drawWidth, drawHeight, offsetX, offsetY;
+
+            if (canvasRatio > imgRatio) {
+                drawWidth = canvas.width;
+                drawHeight = canvas.width / imgRatio;
+                offsetX = 0;
+                offsetY = (canvas.height - drawHeight) / 2;
+            } else {
+                drawHeight = canvas.height;
+                drawWidth = canvas.height * imgRatio;
+                offsetX = (canvas.width - drawWidth) / 2;
+                offsetY = 0;
+            }
+            return { offsetX, offsetY, drawWidth, drawHeight };
+        }
+
+        function startAnimation() {
+            requestAnimationFrame(animate);
+        }
+
+        function animate(currentTime) {
+            requestAnimationFrame(animate);
+
+            if (lastTime === 0) lastTime = currentTime;
+
+            const deltaTime = currentTime - lastTime;
+            let progress = deltaTime / frameInterval;
+
+            if (progress >= 1) {
+                lastTime = currentTime - (deltaTime % frameInterval);
+                currentFrame = (currentFrame + 1) % totalFrames;
+                progress = (deltaTime % frameInterval) / frameInterval;
+            }
+
+            const prevFrame = (currentFrame - 1 + totalFrames) % totalFrames;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw Previous Frame
+            if (images[prevFrame]) {
+                const img = images[prevFrame];
+                const rect = getDrawRect(img);
+                ctx.globalAlpha = 1;
+                ctx.drawImage(img, rect.offsetX, rect.offsetY, rect.drawWidth, rect.drawHeight);
+            }
+
+            // Crossfade Current Frame
+            if (images[currentFrame]) {
+                const img = images[currentFrame];
+                const rect = getDrawRect(img);
+                ctx.globalAlpha = Math.min(progress, 1);
+                ctx.drawImage(img, rect.offsetX, rect.offsetY, rect.drawWidth, rect.drawHeight);
+            }
+
+            ctx.globalAlpha = 1;
+        }
+    </script>
+</body>
+
+</html>
