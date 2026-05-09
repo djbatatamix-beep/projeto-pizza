@@ -560,16 +560,23 @@ ul {
 /* =========================================
    Responsive Adjustments
    ========================================= */
-@media (max-width: 1200px) {
-    .hero-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-}
-
 @media (max-width: 992px) {
-    .nav-links {
-        display: none;
+    .nav-links, .nav-actions {
+        display: none; /* Oculta links e botões do topo para dar espaço ao logo no celular */
+    }
+    
+    .logo {
+        width: 140px;
+    }
+    
+    .logo-image {
+        height: 150px; /* Reduz o logo gigante para caber na tela */
+        top: 140%;
+        left: 10px;
+    }
+
+    .hero {
+        padding-top: 120px; /* Reduz o espaçamento do topo */
     }
     
     .hero-container {
@@ -606,25 +613,44 @@ ul {
     }
     
     .hero-visual {
-        min-height: 400px;
-        height: 50vh;
+        display: none;
     }
-    
-    .ring-1 { width: 400px; height: 400px; }
-    .ring-2 { width: 300px; height: 300px; }
-    .ring-3 { width: 200px; height: 200px; }
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-y: auto; /* Reativa a rolagem APENAS no celular para evitar que os botões cortem */
+    }
+
+    .logo-image {
+        height: 120px;
+        top: 120%;
+        left: 0;
+    }
+
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        min-height: auto;
+    }
+
     .hero-title {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        line-height: 1.5;
     }
     
     .hero-highlights {
         flex-direction: column;
         align-items: flex-start;
-        margin: 0 auto 3rem;
+        margin: 0 auto 2.5rem;
         width: fit-content;
+        gap: 1.2rem;
     }
     
     .hero-actions {
