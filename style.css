@@ -619,17 +619,18 @@ ul {
 
 @media (max-width: 768px) {
     body {
-        overflow-y: auto; /* Reativa a rolagem APENAS no celular para evitar que os botões cortem */
+        overflow-y: auto; /* Reativa a rolagem APENAS vertical no celular */
+        overflow-x: hidden; /* Impede que os brilhos de fundo vazem para os lados (evita site largo) */
     }
 
     .logo-image {
-        height: 120px;
-        top: 120%;
+        height: 90px; /* Reduzindo bastante o logo no celular */
+        top: 100%;
         left: 0;
     }
 
     .hero {
-        padding-top: 100px;
+        padding-top: 80px; /* Puxa o conteúdo mais para cima */
         padding-bottom: 50px;
         min-height: auto;
     }
